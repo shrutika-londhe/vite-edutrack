@@ -1,0 +1,17 @@
+.btn-signup {
+    background-color: #d4af37; /* Gold */
+    color: #fff;
+    border: none;
+}
+.btn-signup:hover {
+    background-color: #b5912d;
+}
+.btn-login {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.btn-login:hover {
+    background-color: #ffffff;
+    color: #1e3a5f;
+}
