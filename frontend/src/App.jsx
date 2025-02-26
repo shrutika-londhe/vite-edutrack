@@ -1,14 +1,33 @@
-import Header from '../src/components/Header/Header'
-import SignUp from './components/auth/SignUp'
-import Dashboard from './components/dashboard/Dashboard'
+// import React from "react";
+import AttendanceForm from "./components/attendance/Attendance";
+// import CourseOutcome from "./components/co-po/Co";
+// import PracticalOutcome from "./components/co-po/Po";
+import { Container,  } from "@mui/material";
+import ResultAnalysis from "./components/result-analysis/ResultAnalysis";
+import CourseOutcome from "./components/co-po/Co";
 
-const App = () => {
+function App() {
   return (
-    <div>
-     
-      <Dashboard/>
-    </div>
-  )
+    <Container>
+      <CourseOutcome/>
+      <AttendanceForm/>
+      {/* <ResultAnalysis/> */}
+    </Container>
+  );
 }
 
-export default App
+export default App;
+
+// import  { useEffect, useState } from "react";
+// import { fetchData } from "./config/api";
+// function App() {
+//   const [message, setMessage] = useState("");
+
+//   useEffect(() => {
+//     fetchData().then((data) => setMessage(data));
+//   }, []);
+
+//   return <h1>{message}</h1>;
+// }
+
+// export default App;
